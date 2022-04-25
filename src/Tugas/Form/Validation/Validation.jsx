@@ -50,7 +50,7 @@ export default class Validation extends React.Component {
             nama: 'required',
             email: 'required|email',
             telepon: 'required|numeric',
-            tglLahir: 'required|date|before:today',
+            tglLahir: `required|date|before:${today}`,
             gender: 'required',
             password: 'min:8|required',
             skb: 'checked'
