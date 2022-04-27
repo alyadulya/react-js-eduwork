@@ -42,19 +42,36 @@ export default class Validation extends React.Component {
 
         Validator.register('checked', function(value, requirement, attribute){
             return value === true;
-        }, 'The :attribute checkbox has not been checked');
+        }, 'Anda belum menyetujui :attribute.');
+        
+        Validator.register('ageLimit', function(value, requirement, attribute){
+            let birthDateLimit = new Date(new Date().setFullYear(new Date().getFullYear() - 17));
+            return (new Date(value)) < birthDateLimit;
+        }, 'Anda belum cukup umur.');
 
         let rules = {
             nama: 'required',
             email: 'required|email',
             telepon: 'required|numeric',
-            tglLahir: 'required|date',
+            tglLahir: 'required|date|ageLimit',
             gender: 'required',
             password: 'min:8|required',
             skb: 'checked'
         }
 
-        let validation = new Validator(data, rules);
+        let validation = new Validator(data, rules, {
+            required: 'Kolom :attribute harus diisi.',
+            email: 'Format email tidak valid.',
+            numeric: ':attribute harus berupa angka.',
+            min: ':attribute minimal harus :min karakter.'
+        });
+        validation.setAttributeNames({
+            telepon: 'nomor HP',
+            tglLahir: 'tanggal lahir',
+            gender: 'jenis kelamin',
+            password: 'password',
+            skb: 'syarat dan ketentuan yang berlaku'
+        });
         validation.passes();
         this.setState({
             errors: [
