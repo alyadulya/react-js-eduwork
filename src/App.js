@@ -1,9 +1,9 @@
-import Form from "./Tugas/Form";
+import Lifecycle from "./Tugas/Lifecycle";
 
 function App() {
   return (
     <div className="App">
-      <Form />
+      <Lifecycle />
     </div>
   );
 }
