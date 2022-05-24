@@ -1,9 +1,9 @@
-import Lifecycle from "./Tugas/Lifecycle";
+import Hook from "./Tugas/Hook";
 
 function App() {
   return (
     <div className="App">
-      <Lifecycle />
+      <Hook />
     </div>
   );
 }
