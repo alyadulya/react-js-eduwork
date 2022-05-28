@@ -1,9 +1,9 @@
-import Hook from "./Tugas/Hook";
+import Routing from "./Tugas/Routing";
 
 function App() {
   return (
     <div className="App">
-      <Hook />
+      <Routing />
     </div>
   );
 }

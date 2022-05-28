@@ -1,0 +1,51 @@
+{
+    "data" : [
+        {
+            "id": 1,
+            "name": "Lenovo IdeaPad Slim 5i",
+            "price": "Rp15.500.000",
+            "image": "ideapad-5.jpg",
+            "description": "IdeaPad 5i (15 inch) Intel menawarkan berbagai hal menarik dari fitur yang disertakan dan bersifat opsional, menjadikannya kombinasi terbaik antara kinerja, konektivitas, dan hiburan dengan Intel Generasi ke-10®Pemrosesan Core i7. Nikmati visual yang tajam pada layar FHD 15 inch bersama dengan suara yang kaya dari speaker yang menghadap pengguna, dengan menggunakan Dolby Audio. Laptop ini bahkan terasa nyaman dengan panel logam dan cat baru yang memberikan permukaan yang terasa lembut."
+        },
+        {
+            "id": 2,
+            "name": "Zenbook Pro Duo 15 OLED (UX582)",
+            "price": "Rp38.240.000",
+            "image": "zenbook-pro-duo-15.jpg",
+            "description": "ZenBook Pro Duo 15 OLED memungkinkan Anda menyelesaikan berbagai hal dengan penuh gaya: dengan tenang, efisien, dan tanpa kerecokan. Ini merupakan pendamping next-level yang kuat dan elegan untuk produktivitas dan kreativitas saat bepergian, dengan menampilkan layar sentuh HDR 4K OLED yang menakjubkan. Ini juga mencakup layar kedua 4K ASUS ScreenPad™ Plus dengan desain kemiringan terbaru yang menawarkan keergonomisan yang lebih nyaman dan alur kerja yang mulus. Didukung oleh prosesor Intel® Core™ i9 8-core dan GPU NVIDIA® GeForce RTX™ 3070, membuat ZenBook Pro Duo 15 OLED memberikan Anda semua manfaat teknologi masa depan, hari ini."
+        },
+        {
+            "id": 3,
+            "name": "Acer Swift X (SFX14-41G)",
+            "price": "Rp13.750.000",
+            "image": "swift-x.jpg",
+            "description": "Stylish and Powerful for Content Creation with New Powerful Nvidia Graphics. Pumping out a consistently rich & bright color with 100% sRGB FHD IPS Panel in ultra-narrow bezels 85,73%. Up to 20% Airflow improvement with All New Fan Design, Air Inlet Keyboard Design and Wider Air Vent."
+        }
+    ],
+    "socmed" : [
+        {
+            "name": "Facebook",
+            "backgroundColor": "#3b5998",
+            "profileName": "Dummy Marketplace",
+            "userName": "@dummymarketplace"
+        },
+        {
+            "name": "Twitter",
+            "backgroundColor": "#55acee",
+            "profileName": "Dummy Marketplace",
+            "userName": "@dummymarketplace"
+        },
+        {
+            "name": "Youtube",
+            "backgroundColor": "#bb0000",
+            "profileName": "Dummy Marketplace",
+            "userName": "Youtube"
+        },
+        {
+            "name": "Instagram",
+            "backgroundImage": "radial-gradient(farthest-corner at 0% 100%, #fcbc65, #8f3db9)",
+            "profileName": "Dummy Marketplace",
+            "userName": "@dummymarketplace"
+        }
+    ]
+}
