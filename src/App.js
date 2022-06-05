@@ -1,9 +1,9 @@
-import Routing from "./Tugas/Routing";
+import Redux from "./Tugas/Redux";
 
 function App() {
   return (
     <div className="App">
-      <Routing />
+      <Redux />
     </div>
   );
 }
