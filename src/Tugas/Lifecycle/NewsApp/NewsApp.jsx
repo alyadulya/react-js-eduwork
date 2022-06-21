@@ -9,8 +9,17 @@ export default class NewsApp extends React.Component {
         this.state = {
             query: '',
             data: [],
+            // apiKey: "5786c1e8258840478840520e14bf8857",
             apiKey: "0707a3314c3a48cdaf9d48865f459408",
         }
+    }
+
+    static getDerivedStateFromProps(props, state) {
+        console.group('get derived state from props');
+        console.log('props: ', props);
+        console.log('state: ', state);
+        console.groupEnd();
+        return null;
     }
 
     componentDidMount() {
@@ -25,7 +34,7 @@ export default class NewsApp extends React.Component {
             `https://newsapi.org/v2/top-headlines?q=${val}&country=id&apiKey=${this.state.apiKey}`
         );
         let data = await res.data.articles;
-        if(res.data.totalResults == 0) {
+        if(Number(res.data.totalResults) === 0) {
             data = null;
         }
         this.setState({ data });
@@ -55,6 +64,8 @@ export default class NewsApp extends React.Component {
     };
 
     render() {
+        console.log(this.state.data);
+        console.log(this.state.query);
         return (
             <div>
                 <Navbar bg="success" variant="dark">
